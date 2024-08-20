@@ -1,0 +1,115 @@
+:root {
+    /* Colors */
+    --background-color: #ffffff;
+    --button-color: #FFFFFF;
+    
+    /* Shadows */
+    --box-shadow-light: 2px 3px 5px #b3b3b3;
+    --box-shadow-dark: -2px -3px 5px #ffffff;
+    --font-size: 20px;
+    --btn-shadow-dark-btns: 0px -2px 10px #705ee3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #9796F0;
+    background-color: #000822;
+    /* background-color: #1c1c1c; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 320px;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: inset 10px 10px 20px #6563f9, inset -10px -10px 20px #6b69fb ;
+    /* box-shadow: inset 10px 10px 20px #000000, inset -10px -10px 20px #000000 ; */
+    padding: 20px;
+}
+.output{
+    width: 100%;
+    background-color: #9299e7;
+    height: 130px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(135deg, #5e6db8, #5580e4, #9171fa);
+}
+.output p{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: -20px;
+}
+.input input{
+    width: 100%;
+    padding: 20px 20px;
+    text-align: right;
+    font-size: 26px;
+    border: none;
+    color: rgb(255, 149, 0);
+}
+input:focus{
+    outline: none;
+}
+
+
+.btns{
+    padding: 20px 5px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--btn-shadow-dark-btns);
+    position: relative;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+button{
+    width: 60px;
+    height: 60px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    border: none;
+    box-shadow: var(--box-shadow-light), var(--box-shadow-dark),  inset var(--box-shadow-light), inset var(--box-shadow-dark);
+    font-weight: 800;
+    font-size: var(--font-size);
+    color: blue;
+    transform: scale(0.9);
+    color: #3c53ff;
+}
+
+
+button:active {
+    transform: scale(0.85);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.operator{
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+.delete{
+    background-color: rgb(22, 93, 245);
+    color: white;
+}
