@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Playfair+Display:ital,wght@1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FCFBF4;
+}
+#main{
+    padding-inline:2.5rem;
+    border: 1px solid black;
+    margin: 12px;
+    /* padding-block: 0.8rem; */
+}
+nav::after{
+    content: " ";
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.822);
+    animation: border-slide 2s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes border-slide {
+    from{
+        width: 0%; 
+    }
+    to{
+        width:100%;
+    }
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    padding-block:1.46rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo img{
+    width: 7.1rem;
+}
+#navigator{
+    display: flex;
+}
+.nav-item a{
+    text-transform: uppercase;
+    margin-left: 1.3rem;
+    text-decoration: none;
+    font-size: 0.71rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.881);
+    letter-spacing: 0.05rem;
+}
+.nav-item a:hover{
+    text-decoration: underline;
+}
+.nav-item a button{
+    /* background-color: red; */
+    font-size: .93rem;
+    padding: 0.5em 1.1em;
+    background-color: rgba(0, 0, 0, 0.961);
+    color: white;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+.nav-item a button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.social-media{
+    padding-left: 1rem;
+    border-left: 1.5px solid black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social-media a{
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    padding: 0.2rem 0.3rem;
+    border-radius: 50%;
+    border: 1.5px solid black;
+}
+.social-media a:hover{
+    background-color: rgba(0, 0, 0, 0.769);
+    color: white;
+}
+
+/* main section start from here -----------
+----------------------------------------- */
+main{
+    display: flex;
+    gap:3.4rem;
+    margin-top: 3.5rem;
+    /* background-color: red; */
+    padding-bottom: 3rem;
+}
+main .left{
+    width: calc(50% - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .left h1{
+    font-size: 4.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.932);
+    font-weight: 200;
+    margin-bottom: 0.7rem;
+    line-height: 1;
+}   
+
+main .left p{
+    font-size: 1.3rem;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Kanit', sans-serif;
+    color: rgba(0, 0, 0, 0.886);
+    font-weight: 200;
+} 
+main .left img{
+    width: 3.5rem;
+    margin-bottom: 0.4rem;
+}
+
+main .right{
+    width: calc(50% - 2rem);
+}
+
+#custom-video{
+    width: 100%;
+    height: 550px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    object-fit: cover;
+    border: none;
+}
+
+/* client section start  */
+.client{
+    padding-block: 3rem;
+    display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items:center ;
+    padding-right: 2.5rem;
+}
+.client h1{
+    font-size: 0.74rem;
+    word-spacing: 0.2rem;
+    border-right: 1px solid black;
+    padding-right: 3rem;
+    padding-block: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.858);
+}
+.client img{
+    width: 4.6rem;
+}
+
+.client img:nth-child(6){
+    width: 7rem;
+}
+.client img:nth-child(2){
+    width: 3.9rem;
+}
+.client img:nth-child(5){
+    width: 5rem;
+}
+
+
+/* do section start -----------------
+------------------------ */
+.do{
+    display: flex;
+    padding-block: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+}
+.do .left{
+    width: 30%;
+}
+.do .left p{
+    color: rgba(0, 0, 0, 0.858);
+    font-size: 0.74rem;
+    word-spacing: 0.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.do .right{
+    padding-left: 3.3rem;
+    border-left: 1px solid black;
+    width: 70%;
+}
+.do .right .row{
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.do .right .row2{
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+    border-top: 1px solid black;
+}
+.do .right .row .col{
+    display: flex;
+    gap: 2rem;
+    align-items: start;
+    width: 50%;
+    padding-right: 3rem;
+}
+.do .right .row .col2{
+    padding-right: 0;
+    padding-left: 3rem;
+    border-left: 1px solid black;
+}
+.do .right .row .col img{
+    width: 3rem;
+}
+.do .right .row .col h1{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.do .right .row .col p{
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+
+/* this is featured section ---------------
+----------------------- */
+
+.featured{
+    padding-block: 3.5rem;
+    display: flex;
+    /* background-color: red; */
+    border-bottom: 1px solid black;
+}
+.featured .left{
+    width: 30%;
+}
+
+.featured .left .content-featured{
+    position: sticky;
+    top: 0;
+}
+.featured .left .content-featured h1{
+    line-height: 1.3;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.featured .left .content-featured p{
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.758);
+}
+.featured .left .content-featured button{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    word-spacing: 0.2rem;
+    padding: 0.6em 1.2em;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.featured .left button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.featured .right .col1{
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid black;
+}
+.featured .right{
+    padding-left: 3.3rem;
+    width: 70%;
+    border-left: 1px solid black;
+}
+.featured .right .col1 #featured-main-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.featured1-img-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.4rem;
+}
+.featured1-img-text h1{
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-family: 'Kanit', sans-serif;
+}
+.cards{
+    padding-top: 1.2rem;
+    display: flex;
+  
+    flex-wrap: wrap;
+}
+.cards .card{
+    width: 50%;
+    margin-bottom: 3rem;
+}
+.cards .card img{
+    width: 100%;
+    height: 11rem;
+    background-color: red;
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
+}
+.cards .card1{
+    padding-left: 0;
+    padding-right: 2.5rem;
+    border-right: 1px solid black;
+ 
+}
+.cards .card2{
+    padding-right: 0;
+    padding-left: 2.5rem;
+}
+.cards .card3, .cards .card4{
+    margin-bottom: 0;
+}
+.featured-img-text h1{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.featured-img-text{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* news ----------------
+------------------ */
+.news{
+    padding-block: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.news h1{
+    font-size: 3.7rem;
+    color: rgba(0, 0, 0, 0.845);
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.news a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4em 1em;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+}
+.news a:hover{
+    color: white;
+    background-color: black;
+}
+/* bottom cards section -----------------
+--------------------------- */
+.bottom-cards{
+    width: 100%;
+    padding-block: 3.4rem;
+    /* background-color: red; */
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    border-bottom: 1.5px solid black;
+}
+.bottom-card img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 0.3rem;
+}
+.bottom-card h3{
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+.bottom-card{
+    width: calc(100% / 3);
+    /* background-color: red; */
+}
+.bottom-card p{
+    font-size: 1.2rem;
+    line-height: 1.28;
+}
+.bottom-card1{
+    padding-right: 2.5rem;
+    border-right: 1px solid black;
+}
+.bottom-card2{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-right: 1px solid black;
+}
+.bottom-card3{
+    padding-left: 2.5rem;
+}
+.bottom-card2 img{
+    height: 11.8rem;
+}
+ /* footer section --------------------
+ --------------------------------- */
+footer{
+    padding-block: 3rem;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+}
+footer .left-footer{
+    width: 33%;
+    border-right: 1px solid black;
+    border-right: 1px solid black;
+}
+footer .left-footer img{
+    width: 7rem;
+    margin-bottom: 1.4rem;
+}
+footer .left-footer p{
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.779);
+    
+}
+footer .right-footer{
+    width: 67%;
+    padding-inline: 3rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.social-media-footer{
+    padding-left: 0;
+    border: none;
+    font-family: arial;
+    margin-top: 5rem;
+}
+.footer-col h2{
+    color: black;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.footer-col a{
+    display: block;
+    margin-bottom: 0.68rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.708);
+}
+.footer-col button{
+    font: 1rem;
+    padding: 0.4em 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.footer-col button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/* copyright section start from here ---------------
+---------------------------- */
+.copyright{
+    border-top: 1px solid black;
+    width: 100%;
+    padding-block: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright .left p{
+    font-size: 0.8rem;
+}
+.copyright .right a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}
+a:hover{
+    text-decoration: underline;
+}
